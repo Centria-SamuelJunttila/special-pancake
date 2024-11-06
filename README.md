@@ -9,3 +9,7 @@
 5.11.2024, 1h, Cisco Introduction to Cybersecurity --> Chapter 2, Quiz done
 
 6.11.2024, 1h, PortSwigger --> Authentication 2FA simple bypass lab & Access control Unprotrcted admin functionality lab solved
+
+6.11.2024, 30min, exploring PortSwigger
+
+6.11.2024, 1h, Cisco Introduction to Cybersecurity --> Chapter 3 Quiz done
