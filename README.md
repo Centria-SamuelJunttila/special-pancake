@@ -13,3 +13,9 @@
 6.11.2024, 30min, exploring PortSwigger
 
 6.11.2024, 1h, Cisco Introduction to Cybersecurity --> Chapter 3 Quiz done
+
+7.11.2024, 55min, Cisco Introduction to Cybersecurity --> Chapter 4 Quiz done
+
+7.11.2024, 20min, Cisco Introduction to Cybersecurity --> Chapter 5 Quiz done
+
+7.11.2024, 43min, Cisco Introduction to Cybersecurity --> Course final exam done
