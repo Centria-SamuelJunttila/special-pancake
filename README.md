@@ -26,4 +26,4 @@
 
 11.11.2024, 1h 30min, lecture
 
-11.11.2024, 10 min, VSC --> opening Repo file
+11.11.2024, 20min, VSC --> opening Repo file & sql file
