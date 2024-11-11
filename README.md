@@ -25,3 +25,5 @@
 11.11.2024, 1h 45 min, itsLearning --> Introduction to PortSwigger done
 
 11.11.2024, 1h 30min, lecture
+
+11.11.2024, 10 min, VSC --> opening Repo file
