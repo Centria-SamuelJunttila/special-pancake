@@ -20,4 +20,6 @@
 
 7.11.2024, 43min, Cisco Introduction to Cybersecurity --> Course final exam done
 
-11.11.2024, sdvvS, PortSwigger --> 
+11.11.2024, 30min, PortSwigger --> exploring PortSwigger
+
+11.11.2024, 1h 45 min, itsLearning --> Introduction to PortSwigger done
