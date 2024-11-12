@@ -27,3 +27,5 @@
 11.11.2024, 1h 30min, lecture
 
 11.11.2024, 20min, VSC --> opening Repo file & sql file
+
+12.11.2024, 2h, VSC --> Booking system phase 1 started
