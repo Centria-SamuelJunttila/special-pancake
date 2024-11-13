@@ -22,7 +22,7 @@
 
 11.11.2024, 30min, PortSwigger --> exploring PortSwigger
 
-11.11.2024, 1h 45 min, itsLearning --> Introduction to PortSwigger done
+11.11.2024, 1h 45min, itsLearning --> Introduction to PortSwigger done
 
 11.11.2024, 1h 30min, lecture
 
@@ -31,3 +31,5 @@
 12.11.2024, 2h 15min, VSC --> Booking system phase 1 steps 1 & 2 done
 
 13.11.2024. 1h, VSC --> Booking system phase 3 started
+
+13.11.2024, 1h 40min, workshop
