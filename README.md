@@ -29,3 +29,5 @@
 11.11.2024, 20min, VSC --> opening Repo file & sql file
 
 12.11.2024, 2h 15min, VSC --> Booking system phase 1 steps 1 & 2 done
+
+13.11.2024. 1h, VSC --> Booking system phase 3 started
