@@ -34,4 +34,4 @@
 
 13.11.2024, 1h 40min, workshop
 
-15.11.2024, 2h kkjmin, Booking system phase 3 continued
+15.11.2024, 2h 13min, Booking system phase 3 continued
