@@ -33,3 +33,5 @@
 13.11.2024. 1h, VSC --> Booking system phase 3 started
 
 13.11.2024, 1h 40min, workshop
+
+15.11.2024, 2h kkjmin, Booking system phase 3 continued
