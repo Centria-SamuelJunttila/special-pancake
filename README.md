@@ -35,3 +35,5 @@
 13.11.2024, 1h 40min, workshop
 
 15.11.2024, 2h 13min, Booking system phase 3 continued
+
+18.11.2024, 1h 30min, Booking system phase 3 done
