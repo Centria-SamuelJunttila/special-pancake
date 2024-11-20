@@ -39,3 +39,5 @@
 18.11.2024, 1h 30min, Booking system phase 3 done
 
 18.11.2024, 1h 30min, lecture
+
+20.11.2024, 1h 50min, lecture
