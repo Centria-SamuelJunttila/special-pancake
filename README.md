@@ -30,14 +30,16 @@
 
 12.11.2024, 2h 15min, VSC --> Booking system phase 1 steps 1 & 2 done
 
-13.11.2024. 1h, VSC --> Booking system phase 3 started
+13.11.2024. 1h, VSC --> Booking system phase 1 continued
 
 13.11.2024, 1h 40min, workshop
 
-15.11.2024, 2h 13min, Booking system phase 3 continued
+15.11.2024, 2h 13min, Booking system phase 1 continued
 
-18.11.2024, 1h 30min, Booking system phase 3 done
+18.11.2024, 1h 30min, Booking system phase 1 done
 
 18.11.2024, 1h 30min, lecture
 
 20.11.2024, 1h 50min, lecture
+
+21.11.2024, 1h 15min, Booking system phase 2 started
