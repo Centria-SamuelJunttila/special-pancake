@@ -10,7 +10,7 @@ ZAP by [Checkmarx](https://checkmarx.com/).
 | High | 0 |
 | Medium | 2 |
 | Low | 1 |
-| Informational | 0 |
+| Informational | 1 |
 
 
 
@@ -19,9 +19,10 @@ ZAP by [Checkmarx](https://checkmarx.com/).
 
 | Name | Risk Level | Number of Instances |
 | --- | --- | --- |
-| Content Security Policy (CSP) Header Not Set | Medium | 1 |
-| Missing Anti-clickjacking Header | Medium | 1 |
-| X-Content-Type-Options Header Missing | Low | 1 |
+| Content Security Policy (CSP) Header Not Set | Medium | 3 |
+| Missing Anti-clickjacking Header | Medium | 3 |
+| X-Content-Type-Options Header Missing | Low | 3 |
+| Authentication Request Identified | Informational | 1 |
 
 
 
@@ -40,6 +41,18 @@ ZAP by [Checkmarx](https://checkmarx.com/).
 
 Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.
 
+* URL: http://localhost:8000
+  * Method: `GET`
+  * Parameter: ``
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
+* URL: http://localhost:8000/login
+  * Method: `GET`
+  * Parameter: ``
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
 * URL: http://localhost:8000/register
   * Method: `GET`
   * Parameter: ``
@@ -47,7 +60,7 @@ Content Security Policy (CSP) is an added layer of security that helps to detect
   * Evidence: ``
   * Other Info: ``
 
-Instances: 1
+Instances: 3
 
 ### Solution
 
@@ -82,6 +95,18 @@ Ensure that your web server, application server, load balancer, etc. is configur
 
 The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.
 
+* URL: http://localhost:8000
+  * Method: `GET`
+  * Parameter: `x-frame-options`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
+* URL: http://localhost:8000/login
+  * Method: `GET`
+  * Parameter: `x-frame-options`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
 * URL: http://localhost:8000/register
   * Method: `GET`
   * Parameter: `x-frame-options`
@@ -89,7 +114,7 @@ The response does not protect against 'ClickJacking' attacks. It should include 
   * Evidence: ``
   * Other Info: ``
 
-Instances: 1
+Instances: 3
 
 ### Solution
 
@@ -119,6 +144,20 @@ If you expect the page to be framed only by pages on your server (e.g. it's part
 
 The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.
 
+* URL: http://localhost:8000
+  * Method: `GET`
+  * Parameter: `x-content-type-options`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: `This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At "High" threshold this scan rule will not alert on client or server error responses.`
+* URL: http://localhost:8000/login
+  * Method: `GET`
+  * Parameter: `x-content-type-options`
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: `This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At "High" threshold this scan rule will not alert on client or server error responses.`
 * URL: http://localhost:8000/register
   * Method: `GET`
   * Parameter: `x-content-type-options`
@@ -127,7 +166,7 @@ The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. T
   * Other Info: `This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
 At "High" threshold this scan rule will not alert on client or server error responses.`
 
-Instances: 1
+Instances: 3
 
 ### Solution
 
@@ -145,6 +184,41 @@ If possible, ensure that the end user uses a standards-compliant and modern web 
 
 
 #### WASC Id: 15
+
+#### Source ID: 3
+
+### [ Authentication Request Identified ](https://www.zaproxy.org/docs/alerts/10111/)
+
+
+
+##### Informational (High)
+
+### Description
+
+The given request has been identified as an authentication request. The 'Other Info' field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to "Auto-Detect" then this rule will change the authentication to match the request identified.
+
+* URL: http://localhost:8000/login
+  * Method: `POST`
+  * Parameter: `username`
+  * Attack: ``
+  * Evidence: `password`
+  * Other Info: `userParam=username
+userValue=foo-bar@example.com
+passwordParam=password
+referer=http://localhost:8000/login`
+
+Instances: 1
+
+### Solution
+
+This is an informational alert rather than a vulnerability and so there is nothing to fix.
+
+### Reference
+
+
+* [ https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/ ](https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/)
+
+
 
 #### Source ID: 3
 
