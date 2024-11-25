@@ -45,3 +45,5 @@
 21.11.2024, 1h 15min, Booking system phase 2 started
 
 25.11.2024, 1h 30min, lecture
+
+25.11.2024, 1h, Booking system phase 2 done
