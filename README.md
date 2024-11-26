@@ -47,3 +47,5 @@
 25.11.2024, 1h 30min, lecture
 
 25.11.2024, 1h, Booking system phase 2 done
+
+26.11.2024, 1h 40min, workshop
