@@ -55,3 +55,5 @@
 2.12.2024, 1h 40min, lecture
 
 4.12.2024, 1h 45min, workshop
+
+4.12.2024, 10min, Booking system phase 3 done
