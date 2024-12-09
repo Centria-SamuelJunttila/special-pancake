@@ -27,4 +27,4 @@ Session Management Response Identified - amount: 2
 - This response was again an informal alert. It said that the response itself contains a session management token.
 
 User Agent Fuzzer - amount: 108
-- This response checks for differences in the mobile sites and compares the statuscode and hashcode of the response body. This response didn't have a solution, likely because it is a simple test for the previpusly mentioned codes.
+- This response checks for differences in the mobile sites and compares the statuscode and hashcode of the response body. This response didn't have a solution, likely because it is a simple test for the previously mentioned codes.
