@@ -63,3 +63,5 @@
 9.12.2024, 30min, Booking system phase 3 fixed
 
 10.12.2024, 45min, Booking system final phase started
+
+10.12.2024, 15min, Booking system phase 4 fixed
