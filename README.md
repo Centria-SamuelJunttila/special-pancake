@@ -65,3 +65,5 @@
 10.12.2024, 45min, Booking system final phase started
 
 10.12.2024, 15min, Booking system phase 4 fixed
+
+11.12.2024, 55min, workshop & The final phase done
